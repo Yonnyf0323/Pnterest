@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#BarraDeNavegacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+#BarraDeNavegacion #Logo{
+display: flex;
+height: 44px;
+width: 44px;
+border-radius: 50px;
+background-image: url(menu/pinterestico.png);
+background-size: 25px;
+background-repeat: no-repeat;
+background-position: center;
+background-color:none;
+border: transparent;
+}
+
+#mainMenu{
+    display: flex;
+}
+
+#mainMenu a{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+input:placeholder-shown{
+    padding:0px 50px;
+}
+
+#finder{
+    display: flex;
+    height: 46px;
+    width: 140vh;
+    border-radius: 50px;
+    background-color:#e9ebf1;
+    border: transparent;
+    font-size: 14px;
+    color: #111111;
+    background-image: url(menu/lupa.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    padding: 0px 50px;
+
+}
+
+#finder:hover{
+    background-color: #888888;
+    transition: all 0.01s ease;
+    border-radius: 50px;
+}
+
+#Notification{
+   height: 44px;
+width: 44px;
+border-radius: 50px;
+background-image: url(menu/campana.png);
+background-size: 25px;
+background-repeat: no-repeat;
+background-position: center;
+background-color:none;
+border: transparent;
+}
+
+#Notification:hover{
+    background-color: #888888;
+    transition: all 0.01s ease;
+    border-radius: 50px;
+}
+
+#Mensaje{
+    height: 44px;
+width: 44px;
+border-radius: 50px;
+background-image: url(menu/mensajesico.png);
+background-size: 25px;
+background-repeat: no-repeat;
+background-position: center;
+background-color:none;
+border: transparent;
+}
+
+#Mensaje:hover{
+    background-color: #888888;
+    transition: all 0.01s ease;
+    border-radius: 50px;
+}
+
+#usuario{
+    height: 38px;
+    width: 38px;
+    border-radius: 50px;
+    background-image: url(menu/usery.png);
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:none;
+    border: transparent;
+}
+
+#usuario:hover{
+    background-color: #888888;
+    transition: all 0.01s ease;
+    border-radius: 50px;
+}
+
+#BarraDeNavegacion a{
+    text-decoration: none;
+    color: #111111;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+#content{
+    columns: 6 200px;
+    column-gap: 20px;
+    padding: 1px 20px;
+}
+.card-image{
+    border-radius: 20px;
+    background: #111111;
+    margin-bottom: 10px;
+}
+#content .card-image img{
+    display:flex;
+    max-width: 100%;
+    min-height: 100%;
+    border-radius: 20px;
+    position: relative;
+}
+.card-image:hover img{ 
+    opacity: 0.5;
+    background: #111111;
+}
+.botones{
+display: none;
+}
+.card-image:hover .botones{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+}
+#ilustraciones{
+    display: flex;
+    background-color: transparent;
+    border: transparent;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #e9ebf1;
+    padding: 15px 20px;
+    margin: 10px 0px;
+}  
+#guardar{
+    display: flex;
+    background-color: red;
+    border-radius: 50px;
+    border: transparent;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #e9ebf1;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    margin: 10px 0px;
+}   
+#guardar:hover{
+    background-color: #a10c0c;
+    transition: all 0.01s ease;
+    border-radius: 50px;
+}
+/*
+#subir{
+    display: flex;
+    height: 44px;
+    width: 44px;
+    border-radius: 50px;
+    border: transparent;
+    background-image: url("images/subir.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 60vh;
+}
+#subir:hover{
+    background-color: #ffffff;
+    border-radius: 50px;
+    transition: all 0.01s ease;
+}
+#puntos{
+    display: flex;
+    height: 44px;
+    width: 44px;
+    border-radius: 50px;
+    background-color:none;
+    border: transparent;
+    background-image: url("images/puntos.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;    
+    margin-top: 60vh;
+    margin-left: 2vh;
+}
+#puntos:hover{
+    background-color: #ffffff;
+    border-radius: 50px;
+    transition: all 0.01s ease;
+}
+*/
+@media screen and (max-width: 740px) { 
+    #navbar-pinterest {
+        height: 400%; 
+        flex-flow: column;
+    }   
+    #navbar-pinterest .finder{
+        display: flex;
+        height: 46px;
+        width: 45vh;
+    }
+}
